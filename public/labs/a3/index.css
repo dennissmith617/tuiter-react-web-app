@@ -494,7 +494,7 @@ p#id-selector-2 {
    and (max-width: 1800px) {
   body {
     background-color: white;
-    color: black;
+    color: green;
   }
   .media-query {
     background-color: yellow;
