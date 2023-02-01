@@ -1,0 +1,99 @@
+.wd-bookmark-font{
+    padding-top: 12px;
+    color: white;
+    font-family: "Helvetica Neue";
+    font-weight:bold;
+    size: 20px;
+}
+
+.wd-title-author-font{
+    color: white;
+    font-family: "Helvetica Neue";
+    size: 15px;
+    font-weight: bold;
+}
+
+.wd-title-format{
+    padding-left: 12px;
+}
+
+.wd-author-format {
+    position: relative;
+}
+
+.wd-story-font{
+    color: lightgray;
+    font-family: "Helvetica Neue";
+    size: 15px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    float:left;
+}
+
+.wd-main-content-font {
+    color: white;
+    font-family: "Helvetica Neue";
+    size: 15px;
+    float: left;
+    width: 506px;
+    margin-bottom: 12px;
+}
+
+.wd-profile-picture {
+    border-radius: 24px;
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 12px;
+}
+
+.wd-bookmark-story-picture {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+}
+
+.wd-image-border {
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    margin-top: 12px;
+    overflow:hidden
+}
+
+.wd-icon {
+    height: 24px;
+    width: 24px;
+    float: left;
+    position: relative;
+    margin-right: 12px
+
+}
+
+.wd-icon-font {
+    color: lightgray;
+    font-family: "Helvetica Neue";
+    size: 15px;
+    float: left
+}
+
+.wd-heart-font {
+    color: red;
+    font-family: "Helvetica Neue";
+    size: 15px;
+    float: left
+}
+
+.wd-icon-border {
+    float: left;
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+
+
+}

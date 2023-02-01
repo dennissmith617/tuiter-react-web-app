@@ -1,0 +1,23 @@
+/** body style for index and bookmarks **/
+.wd-global-bodystyle {
+    background-color: black;
+    padding-left: 16px;
+}
+
+.wd-global-border{
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow:hidden;
+}
+
+/**same as trending-font(explore), handle-font(bookmarks)*/
+.wd-global-th-font{
+    color: rgb(110, 118, 125);
+    font-family: "Helvetica Neue";
+    size: 13px;
+}

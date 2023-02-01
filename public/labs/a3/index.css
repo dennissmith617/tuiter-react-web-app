@@ -202,6 +202,13 @@ p#id-selector-2 {
    float: left;
 }
 
+.rotate-paragraph {
+ width: 250px;
+ height: 250px;
+ transform: rotate(90deg);
+}
+
+
 .rotate-list {
    transform: rotate(12deg);
    width: 100px;
