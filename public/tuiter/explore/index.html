@@ -3,81 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet">
     <link href="../styles.css"
           rel="stylesheet"/>
     <link href="index.css"
           rel="stylesheet"/>
 </head>
 
-<body class="wd-global-bodystyle">
-<!--AnB - Search Bar, Gear, Links-->
-<div class="wd-AB-container">
-    <input class="wd-searchBar"
-           type="text"
-           placeholder="Search Tuiter"
-           id="text-fields-search"/>
-        <a class="wd-searchGear"
-           href="explore-settings.html">
-            <img class="wd-float-right wd-searchGear" src="tuiter-gear.png" />
-        </a>
+<body class="wd-bodystyle-margin">
+<div class = "row">
+    <!--Nav Sidebar-->
+    <div class="col-2">
+        <div class="list-group rounded .wd-sidebar-vertcenter">
+            <a href="#" class="list-group-item list-group-item-action .wd-sidebardef-font">
+                <i class="fab fa=twitter" style="rgb(61,61,61)"></i></a>
+            <a href="#" class="list-group-item list-group-item-action .wd-sidebardef-font">
+                <div>
+                    <i class="fab-home fa wd-float-left wd-icon" style="color: rgb(61,61,61)"></i>
+                    <span class="d-none d-xl-block wd-float-left">Home</span>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action active wd-smallfont">
+                <i class="fa-hashtag fa fa-inverse wd-float-left wd-icon"></i>
+                <span class="d-none d-xl-block wd-float-left">Explore</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-sidebardef-font">
+                <i class="fa-bell fa wd-float-left wd-icon" style="color: rgb(61,61,61)"></i>
+                <span class="d-none d-xl-block wd-float-left">Notifications</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-sidebardef-font">
+                <i class="fa-envelope fa wd-float-left wd-icon" style="color: rgb(61,61,61)"></i>
+                <span class="d-none d-xl-block wd-float-left">Messages</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-sidebardef-font">
+                <i class="fa-bookmark fa wd-float-left wd-icon" style="color: rgb(61,61,61)"></i>
+                <span class="d-none d-xl-block wd-float-left">Bookmarks</span>
+            </a>
 
-    <!--B - Hyperlinks-->
-    <label id=hyperlink-bar"  class="wd-below">
-        <a class="wd-link wd-selected" href="/index.html">For You</a>
-        <a class="wd-link wd-not-selected" href="/trending.html">Trending</a>
-        <a class="wd-link wd-not-selected" href="/COVID-19.html">COVID-19</a>
-        <a class="wd-link wd-not-selected" href="/News.html">News</a>
-        <a class="wd-link wd-not-selected" href="/Sports.html">Sports</a>
-        <a class="wd-link wd-not-selected" href="/Entertainment.html">Entertainment</a>
-    </label>
-</div>
-<!--C - Trends -->
-<div>
-    <label id="trending categories" class="wd-global-th-font">
-        <div class="wd-global-border">
-            Trending in Science<br>
-            <label class="wd-headline-font">Starship</label> <br>
-            55.5k Tuits<br>
-            <br>
-        </div>
-        <div class="wd-global-border">
-            Sports * Trending<br>
-            <label class="wd-headline-font">Joe Rogan</label> <br>
-            5,218 Tuits<br>
-            <br>
-        </div>
-    </label>
-</div>
-<!--D - Suggested posts -->
-<div>
-    <label id="suggested posts" class="wd-headline-font">
-        <div class="wd-border-with-image">
-            <img class="wd-float-right wd-news-image" src="a3cuomoheadlinephoto.jpeg" />
-            The New York Times<br>
-            <label class="wd-headline-font">CNN's Cuomo conundrum: A star anchor with a brother in trouble</label> <br>
-        </div>
-        <div class="wd-border-with-image">
-            <img class="wd-float-right wd-news-image" src="a3headlinebooster.jpeg" />
+            <a href="#" class="list-group-item list-group-item-action wd-sidebardef-font">
+                <i class="fa-list fa wd-float-left wd-icon" style="color: rgb(61,61,61)"></i>
+                <span class="d-none d-xl-block wd-float-left">Lists</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-sidebardef-font">
+                <i class="fa-user fa wd-float-left wd-icon" style="color: rgb(61,61,61)"></i>
+                <span class="d-none d-xl-block wd-float-left">Profile</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-sidebardef-font">
+                <i class="fa-ellipsis fa wd-float-left wd-icon" style="color: rgb(61,61,61)"></i>
+                <span class="d-none d-xl-block wd-float-left">Profile</span>
+            </a>
+            <button class="btn btn-primary">
+                Tuit
+            </button>
 
-            Bloomberg Opinion<br>
-            <label class="wd-headline-font">Thinking about getting a bosster? Read this first. </label>
         </div>
-    </label>
-</div>
-<!--E - Topic Posts-->
-<div>
-    <label id="topic posts" class=" wd-headline-font">
-        <div class="wd-border-with-image">
-            <img class="wd-float-right wd-news-image" src="a3macovid.jpeg" />
-            <label class="wd-global-th-font">COVID-19 * LIVE<br> </label>
-            COVID-19: News and updates for Massachusetts<br>
+    </div>
+
+    <!--Main Content-->
+    <div class="col-7">
+        <div>
+            <input class="wd-searchbar"
+                   type="text"
+                   placeholder="Search Tuiter"
+                   id="text-fields-search"/>
+            <h3><a href="#"><i class="fa-cog fa wd-float-right wd-margin-down" style="color: rgb(23,117,200)"></i></a></h3>
         </div>
-        <div class="wd-border-with-image">
-            <img class="wd-float-right wd-news-image" src="a3upsetbill.jpeg" />
-            <label class="wd-global-th-font">Sports * LIVE<br> </label>
-            Patriots fans react to their team being average at best<br>
-        </div>
-    </label>
+
+    </div>
+
+    <!--Follow Links-->
+    <div class="col-2">
+
+    </div>
+
 </div>
 </body>
 </html>

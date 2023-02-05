@@ -1,3 +1,65 @@
+.wd-bodystyle-margin {
+    padding:20px;
+}
+
+.wd-sidebar-vertcenter {
+    vertical-align: center;
+}
+
+.wd-sidebardef-font {
+    color: rgb(61,61,61);
+    font-size: small;
+}
+
+.wd-float-left{
+    float:left;
+}
+
+.wd-icon{
+    vertical-align: bottom;
+    margin-right: 6px;
+    font-size: large;
+}
+
+.wd-smallfont {
+    font-size: small;
+}
+
+.wd-col-tuit{
+    margin-top: 8px;
+    border-radius: 50px;
+}
+
+.wd-searchbar {
+    color: rgb(61,61,61);
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    position: absolute;
+    width: 35%;
+    border-color:darkgray;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url(https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-grise.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: 2% 40%;
+}
+
+.wd-float-right{
+    float:right;
+}
+
+.wd-margin-down{
+    margin-top: 10px;
+}
+
+
+
+<!--Below from A3-->
 .wd-headline-font {
     color: white;
     font-family: "Helvetica Neue";
@@ -32,20 +94,6 @@
     padding-left: 16px;
     padding-top: 16px;
     padding-bottom: 90px
-}
-
-.wd-searchBar {
-    background-color: RGB(47, 51, 54);
-    color: darkgray;
-    padding-left: 60px;
-    padding-right: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 50px;
-    font-family: "Helvetica Neue";
-    font-weight: bold;
-    font-size: 16px;
-    position: absolute;
 }
 
 /*---Spacing bt/ A and B within AB container---*/
