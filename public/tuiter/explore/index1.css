@@ -6,25 +6,18 @@
     vertical-align: center;
 }
 
-.search-tuiter {
+.wd-search-tuiter {
     background: rgb(245, 247, 248);
 }
 
-.image-card {
- object-fit: fill;
-}
 
-.nav-side-bar {
-    border:none;
-}
-
-.selected-tab {
+.wd-selected-side-tab {
     border: none;
     color: black;
 
 }
 
-.card-img-overlay {
+.wd-card-img-overlay {
   background-color: rgba(#000, 0.4);
 }
 
@@ -33,9 +26,6 @@
     font-size: medium;
 }
 
-.margin-extension {
-    margin-bottom:10px;
-}
 
 .wd-blue-font {
     color: rgb(23,117,200);
@@ -53,11 +43,6 @@
 
 .wd-smallfont {
     font-size: small;
-}
-
-.wd-col-tuit{
-    margin-top: 8px;
-    border-radius: 50px;
 }
 
 .wd-searchbar {
@@ -83,17 +68,17 @@
     float:right;
 }
 
-.follow-button {
+.wd-follow-button {
     background:black;
     border-radius:50px;
 }
 
-.who-to-follow {
+.wd-who-to-follow {
     border:none;
     background:rgb(233, 235, 236);
 }
 
-.follow-recommend-links {
+.wd-follow-recommend-links {
     border:none;
    background: rgb(245, 247, 248);
 }
@@ -103,15 +88,6 @@
 }
 
 .wd-tab-select{
-    /*border-top: darkgray;
-    border-left: darkgray;
-    border-right: darkgray;
-    border-top-style: solid;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 1px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;*/
     border-bottom-width: 4px;
     border-bottom-color: dodgerblue;
     border-bottom-style: solid;
@@ -171,7 +147,7 @@
     font-size:small;
 }
 
-.selected-tab {
+.wd-selected-tab {
     font-weight:bold;
 }
 
