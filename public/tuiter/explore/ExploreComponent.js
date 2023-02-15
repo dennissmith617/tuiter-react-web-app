@@ -43,7 +43,7 @@ const ExploreComponent = () => {
                     <div class="position-relative text-white">
                         <img src="../../images/spaceX-starship-a4.webp"
                             class="img-fluid" alt="spacexphoto">
-                        <div class="fw-bold fs-2 position-absolute wd-mainphoto wd-color-black">SpaceXs Starship</div>
+                        <div class="fw-bold fs-2 position-absolute wd-mainphoto">SpaceXs Starship</div>
                     </div>
                 </li>
            </ul>
