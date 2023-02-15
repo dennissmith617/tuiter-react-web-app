@@ -1,0 +1,94 @@
+body{
+    margin: 0px;
+    background-color: black;
+    font-family: helvetica neue;
+}
+
+.wd-post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: solid 1px rgb(47, 51, 54);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-profile-pic{
+    margin-left: 16px;
+    width: fit-content;
+    padding-right: 12px;
+}
+
+.wd-prof-pic-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-prof-info{
+    width: 506px;
+    padding-right: 12px;
+}
+
+.wd-prof-name{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd-prof-handle{
+    font-size: 15px;
+    color: #a7a2a2;
+}
+
+.wd-plain{
+    text-decoration: none;
+}
+
+.wd-ellipsis{
+    color: rgb(110, 118, 125);
+    font-size: small;
+    float: right;
+}
+
+.wd-row{
+    display: block;
+}
+
+.wd-main-topic{
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+.wd-tuit-body{
+    border: solid 1px rgb(110, 118, 125);
+    border-radius: 10px;
+    font-size: 15px;
+    width: 506px;
+}
+
+.wd-storyPic-format {
+    width: 504px;
+    height: 264px;
+    border-radius: 10px;
+}
+
+.wd-story-title{
+    font-weight: bold;
+    padding: 12px;
+}
+.wd-story-content{
+    padding: 12px;
+    color: #a7a2a2;
+}
+
+.wd-reply-segment{
+    width: 506px;
+}
+
+.wd-reaction{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: #a7a2a2;
+    padding-top: 12px;
+    padding-inline-start: 0px;
+}
