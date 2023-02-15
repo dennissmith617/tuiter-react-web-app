@@ -84,3 +84,16 @@
 .wd-float-right {
     float: right;
 }
+
+.wd-color-black{
+    color: black;
+}
+
+.wd-bottom-mgn{
+    margin-bottom: 4px;
+}
+
+.wd-mainphoto{
+    bottom: 10px;
+    left: 10px;
+}

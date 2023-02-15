@@ -2,6 +2,8 @@
 console.log('Hello World!');
 console.log('Variables and Constants');
 
+$("#hello").html("Hello World!")
+
 global1 = 10;
 var functionScoped = 2;
 let blockScoped = 5;
@@ -273,8 +275,5 @@ const init = () => {
    }
    hideBtn.click(hideHandler);
    showBtn.click(showHandler);
-
-
-
 }
 $(init);
