@@ -10,14 +10,14 @@ const PostItem = (post) => {
                 <span class="wd-prof-handle">${post.handle}</span>
                 <span class="wd-prof-handle dot-before">. ${post.time}</span>
                 <a href="#!" class="wd-plain">
-                    <span class="wd-ellipsis wd-row"
+                    <span class="wd-ellipsis wd-row">
                         <i class="fas fa-ellipsis-h"></i>
                     </span>
                 </a>
                 <span class="wd-main-topic wd-row">${post.tuit1}
                 <a href="${post.tuitLink}">${post.tuitTag}</a> ${post.tuit2}</span>
             </div>
-            <div class="wd-tuit-body"
+            <div class="wd-tuit-body">
                 <img src="${post.mainPic}" class="wd-storyPic-format">
                 <span class="wd-story-title wd-row ${post.extraText === 'false' ? "d-none" : ""}">${post.bodyHeading}</span>
                 <span class="wd-story-content wd-row ${post.extraText === 'false' ? "d-none" : ""}">${post.bodyText}</span>
@@ -26,7 +26,7 @@ const PostItem = (post) => {
                     </a>
                 </span>
             </div>
-            <div class="wd-reply-segment"
+            <div class="wd-reply-segment">
                 <ul class="wd-reaction">
                     <li>
                         <a href="#!" class="wd-no-decoration text-secondary">
