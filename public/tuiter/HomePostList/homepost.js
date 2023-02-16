@@ -13,9 +13,12 @@ export default [
         bodyText: "true",
 
         bodyHeading: "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
-        mainPic: "../../images/inspiration4cover.jpg",
+        hasBodyHeading: true,
+        mainPic: "../../images/inspiration4cover.png",
         bodyText: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space...",
+        hasBodyText: true,
         bodyLink: "netflix.com",
+        hasBodyLink: true,
         likes: "37.5k",
         comments: "4.2k",
         retweets: "3.5k"
