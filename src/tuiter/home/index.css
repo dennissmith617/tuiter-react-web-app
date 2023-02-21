@@ -1,0 +1,27 @@
+.wd-interaction-options {
+    width: 95%;
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+    color:darkgray;
+    float: left;
+    padding-inline-start: 0;
+    margin-top: 8px;
+}
+
+.wd-option {
+    display: inline;
+}
+
+.wd-full-width{
+    width: 100%;
+}
+
+
+.wd-mgn-left{
+    margin-left: 8px;
+}
+
+.wd-gray-col {
+    color:gray;
+}
