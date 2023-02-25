@@ -1,46 +1,49 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 
-const NavigationSidebar = (
- {
-   active = 'explore'
- }
-) => {
- return (
-   <div className="list-group">
-     <a className="list-group-item">Tuiter</a>
-     <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
-       Home
-     </a>
-     <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
-       Explore
-     </a>
-     <a className={`list-group-item
-                    ${active === 'notifications'?'active':''}`}>
-       Notifications
-     </a>
-     <a className={`list-group-item
-                    ${active === 'messages'?'active':''}`}>
-       Messages
-     </a>
-     <a className={`list-group-item
-                    ${active === 'bookmarks'?'active':''}`}>
-       Bookmarks
-     </a>
-     <a className={`list-group-item
+const NavigationSidebar = () => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/')
+    const active = paths[2];
+    return (
+        <div className="list-group">
+            <Link to="/tuiter/tuiter" className={`list-group-item ${active === 'tuiter'?'active':''}`}>
+                Tuiter
+            </Link>
+            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+                Home
+            </Link>
+            <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
+                Explore
+            </Link>
+            <Link to="/tuiter/notifications" className={`list-group-item ${active === 'notifications'?'active':''}`}>
+                Notifications
+            </Link>
+            <Link to="/tuiter/messages" className={`list-group-item ${active === 'messages'?'active':''}`}>
+                Messages
+            </Link>
+            <Link to="/tuiter/bookmarks" className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
+                Bookmarks
+            </Link>
+            <Link to="/tuiter/lists" className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-       Lists
-     </a>
-     <a className={`list-group-item
+                Lists
+            </Link>
+            <Link to="/tuiter/profile" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
-       Profile
-     </a>
-     <a className={`list-group-item
+                Profile
+            </Link>
+            <Link to="/tuiter/more" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-       More
-     </a>
-   </div>
- );
+                More
+            </Link>
+
+            <Link to="/" className={`list-group-item
+                    ${active === 'labs'?'active':''}`}>
+                Labs
+            </Link>
+        </div>
+    );
 };
 export default NavigationSidebar;

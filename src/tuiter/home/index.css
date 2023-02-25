@@ -25,3 +25,27 @@
 .wd-gray-col {
     color:gray;
 }
+
+.wd-retweeted {
+    color:gray;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.wd-retweet {
+    margin-right: 5px;
+}
+
+.wd-title {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.wd-retweet-post {
+    text-decoration: none;
+}
+
+.wd-thread {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

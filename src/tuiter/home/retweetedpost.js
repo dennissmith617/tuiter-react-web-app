@@ -8,7 +8,7 @@ const RetweetedPost = ({
                                       "userName": "@SpaceX",
                                       "time": "23h",
                                       "title": "Dennis and Akiki Tito  are the first two crewmembers on Starship's second commercial spaceflight around the Moon ",
-                                      "image": "spacex.png",
+                                      "profile": "spacexlogo.jpeg",
                                       "retweet": {
 
                                       }
