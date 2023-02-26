@@ -1,8 +1,5 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faComment, faHeart} from "@fortawesome/fontawesome-free-regular";
-import {faArrowUp, faRetweet, faShare, faUpload} from "@fortawesome/fontawesome-free-solid";
-import {faArrowUpFromBracket} from "@fortawesome/free-solid-svg-icons/faArrowUpFromBracket";
 
 const RepliedPost = ({
                        post = {"_id": 234,
@@ -25,10 +22,10 @@ const RepliedPost = ({
                           }) => {
     return <div>
         <ul className={"wd-interact-options"}>
-            <li className={"wd-option"}><FontAwesomeIcon icon={faComment}/> {post.commentsCount} </li>
-            <li className={"wd-option"}><FontAwesomeIcon icon={faRetweet}/> {post.retweetCount} </li>
-            <li className={"wd-option"}><FontAwesomeIcon icon={faHeart}/> {post.likesCount} </li>
-            <li className={"wd-option"}><FontAwesomeIcon icon={faArrowUpFromBracket}/> </li>
+            <li className={"wd-option"}><FontAwesomeIcon icon="fa-solid fa-comment" />{post.commentsCount} </li>
+            <li className={"wd-option"}><FontAwesomeIcon icon="fa-solid fa-retweet" />{post.retweetCount} </li>
+            <li className={"wd-option"}><FontAwesomeIcon icon="fa-solid fa-heart" /> {post.likesCount} </li>
+            <li className={"wd-option"}><FontAwesomeIcon icon="fa-solid fa-arrow-up" /> </li>
         </ul>
     </div>
 };
