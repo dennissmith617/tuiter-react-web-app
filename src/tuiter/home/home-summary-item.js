@@ -3,7 +3,6 @@ import "./index.css";
 import RetweetedPost from "./retweetedpost";
 import RepliedPost from "./repliedpost";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCheckSquare, faCoffee, faHome, faRetweet} from '@fortawesome/fontawesome-free-solid';
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
 import {faCircleDot} from "@fortawesome/free-solid-svg-icons/faCircleDot";
 import {faDotCircle} from "@fortawesome/free-solid-svg-icons/faDotCircle";
@@ -12,13 +11,12 @@ import {faEllipsisH} from "@fortawesome/free-solid-svg-icons/faEllipsisH";
 const HomeSummaryItem = (
     {
         post =   {
-            "_id": 123,
             "topic": "SpaceX",
             "userName": "@SpaceX",
             "time": "23h",
             "title": "Dennis and Akiki Tito  are the first two crewmembers on Starship's second commercial spaceflight around the Moon",
-            "url": "https://www.spacex.com/updates/",
             "image": "datito.jpeg",
+            "url": "https://www.spacex.com/updates/",
             "profile": "spacexlogo.jpeg",
             "likes": "11.1k",
             "retweets": "5000",
@@ -32,7 +30,7 @@ const HomeSummaryItem = (
     return(
         <li className="list-group-item">
             <div className="row">
-                { post.retweetedName!=null && <div className={"fw-bolder wd-retweeted"}> <FontAwesomeIcon className ={"wd-retweet"} icon={faRetweet}/>{post.retweetedBy} Retweeted</div>}
+                { post.retweetedName!=null && <div className={"fw-bolder wd-retweeted"}> <FontAwesomeIcon className ={"wd-retweet"} icon="fa-solid fa-retweet" />{post.retweetedBy} Retweeted</div>}
                 <div className="col-2">
                     <img width={60} className={"rounded-5"} src={'../../images/'+post.profile}/>
                 </div>
