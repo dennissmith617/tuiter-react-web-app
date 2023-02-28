@@ -3,10 +3,7 @@ import "./index.css";
 import RetweetedPost from "./retweetedpost";
 import RepliedPost from "./repliedpost";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCircleCheck} from "@fortawesome/free-solid-svg-icons/faCircleCheck";
-import {faCircleDot} from "@fortawesome/free-solid-svg-icons/faCircleDot";
-import {faDotCircle} from "@fortawesome/free-solid-svg-icons/faDotCircle";
-import {faEllipsisH} from "@fortawesome/free-solid-svg-icons/faEllipsisH";
+import {faCircleCheck,faCircleDot, faDotCircle, faEllipsisH, faRetweet} from "@fortawesome/free-solid-svg-icons";
 
 const HomeSummaryItem = (
     {
@@ -30,9 +27,14 @@ const HomeSummaryItem = (
     return(
         <li className="list-group-item">
             <div className="row">
-                { post.retweetedName!=null && <div className={"fw-bolder wd-retweeted"}> <FontAwesomeIcon className ={"wd-retweet"} icon="fa-solid fa-retweet" />{post.retweetedBy} Retweeted</div>}
+                {
+                    post.retweetBy &&
+                    <div className={"fw-bolder wd-retweeted"}>
+                    <FontAwesomeIcon className ={"wd-retweet"} icon={faRetweet}/>{post.retweetBy} Retweeted<
+                    /div>
+                }
                 <div className="col-2">
-                    <img width={60} className={"rounded-5"} src={'../../images/'+post.profile}/>
+                    { post.profile && <img width={60} className={"rounded-5"} src={'../../images/'+post.profile}/>}
                 </div>
                 <div className="col-10">
                     <span className={"fw-bolder"}>{post.topic} </span>
@@ -40,7 +42,21 @@ const HomeSummaryItem = (
                     <span className={"wd-gray-col"}> {post.userName} . {post.time} </span>
                     <FontAwesomeIcon icon={faEllipsisH} className={"float-end wd-gray-col"}></FontAwesomeIcon>
                     <div className={"wd-title"}>{post.title} <a className={"wd-retweet-post"} href={"https://www."+post.url}>{post.url}</a></div>
-
+                    { post.retweeted &&
+                        <>
+                         <li className="list-group-item">
+                        <div className="col-2">
+                            {post.retweeted.profile && <img width={60} className={"rounded-5"} src={'../../images/'+post.retweeted.profile}/>}
+                        </div>
+                        <div className="col-10">
+                            <span className={"fw-bolder"}>{post.retweeted.userName} </span>
+                            <FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon>
+                             <span className={"wd-gray-col"}> {post.retweeted.userName} . {post.retweeted.time} </span>
+                             <div className={"wd-title"}>{post.retweeted.title}</div>
+                         </div>
+                         </li>
+                        </>
+                    }
                     <RetweetedPost className={"col-10 wd-title"} post={post}/>
                     <RepliedPost post={post}/>
                     <div className ={"wd-thread"}>

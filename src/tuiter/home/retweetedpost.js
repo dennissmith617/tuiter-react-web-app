@@ -15,9 +15,10 @@ const RetweetedPost = ({
                                       }
                                   }
                               }) => {
+         console.log(post);
     if(post.image!=null) {
         return (Image(post.image));
-    } else {
+    } else if(post.retweet != null) {
         return (Tweet(post.retweet));
     }
 };
@@ -28,14 +29,19 @@ function Image(url) {
 }
 
 function Tweet(post) {
-    return <li className="list-group-item rounded-2"><div>
-        <img width={20} src={"../images/"+post.profilePic} className ="rounded-5"/>
-        <span className={"fw-bolder wd-mgn-left"}>{post.topic} </span>
-        <FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon>
-        <span className={"wd-gray-col"}> {post.userName} . {post.time} </span>
-        <i className={"fa-solid fa-check"}></i>
-        <div>{post.title}</div>
-    </div></li>;
+    console.log(post);
+    return (
+    <li className="list-group-item rounded-2">
+        <div>
+            {post.profile && <img width={20} src={"../images/"+post.profile} className ="rounded-5"/>}
+            <span className={"fw-bolder wd-mgn-left"}>{post.topic} </span>
+            <FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon>
+            <span className={"wd-gray-col"}> {post.userName} . {post.time} </span>
+            <i className={"fa-solid fa-check"}></i>
+            <div>{post.title}</div>
+        </div>
+    </li>
+    );
 }
 
 export default RetweetedPost;
