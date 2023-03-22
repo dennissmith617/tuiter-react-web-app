@@ -1,0 +1,16 @@
+[
+  {
+    "firstName": "Dennis",
+    "lastName": "Smith",
+    "handle": "@dsmith",
+    "profilePicture": "reactlogo.png",
+    "bannerPicture": "inspiration4cover.jpg",
+    "bio": "Graduate Student, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
+    "website": "youtube.com/webdevtv",
+    "location": "Boston, MA",
+    "dateOfBirth": "11/30/1996",
+    "dateJoined": "4/2009",
+    "followingCount": 340,
+    "followersCount": 223
+  }
+]
