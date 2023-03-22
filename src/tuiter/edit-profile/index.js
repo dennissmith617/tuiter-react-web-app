@@ -26,7 +26,7 @@ const EditProfileComponent = () => {
         dispatch(editProfile(newProfile));
         navigate('/tuiter/profile');
     }
-    console.log(profile);
+    
     return (
         <>
             <div className="position-relative">
