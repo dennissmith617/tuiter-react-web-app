@@ -12,5 +12,5 @@ const profileSlice = createSlice({
     }
 });
 
-export const {updateProfile} = profileSlice.actions;
+export const {editProfile} = profileSlice.actions;
 export default profileSlice.reducer;

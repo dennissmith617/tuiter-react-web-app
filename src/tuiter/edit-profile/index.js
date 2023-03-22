@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 import {useNavigate} from "react-router";
 import {useDispatch, useSelector} from "react-redux";
-import {updateProfile} from "../reducers/profile-reducer";
+import {editProfile} from "../reducers/profile-reducer";
 
 const EditProfileComponent = () => {
     const profile = useSelector( state => state.profile );
-    const [firstName, setFirstName] = useState({firstName: profile.firstName});
-    const [lastName, setLastName] = useState({lastName: profile.lastName});
-    const [bio, setBio] = useState({bio: profile.bio});
-    const [location, setLocation] = useState({location: profile.location});
-    const [website, setWebsite] = useState({website: profile.website});
-    const [dateOfBirth, setDateOfBirth] = useState({dateOfBirth: profile.dateOfBirth});
+    const [firstName, setFirstName] = useState({firstName: profile[0].firstName});
+    const [lastName, setLastName] = useState({lastName: profile[0].lastName});
+    const [bio, setBio] = useState({bio: profile[0].bio});
+    const [location, setLocation] = useState({location: profile[0].location});
+    const [website, setWebsite] = useState({website: profile[0].website});
+    const [dateOfBirth, setDateOfBirth] = useState({dateOfBirth: profile[0].dateOfBirth});
     const dispatch = useDispatch();
     let navigate = useNavigate();
 
@@ -23,10 +23,10 @@ const EditProfileComponent = () => {
             website: website,
             dateOfBirth: dateOfBirth,
         }
-        dispatch(updateProfile(newProfile));
+        dispatch(editProfile(newProfile));
         navigate('/tuiter/profile');
     }
-
+    console.log(profile);
     return (
         <>
             <div className="position-relative">
@@ -37,11 +37,11 @@ const EditProfileComponent = () => {
                             onClick={() => profileUpdateHandler(firstName, lastName, bio, location, website, dateOfBirth)}>
                         Save</button>
                 </div>
-                <img src={profile.bannerPicture} width="100%" height={150}  />
+                <img src={`/images/${profile[0].bannerPicture}`} width="100%" height={150}  />
 
                     <div className="col col-8">
                         <img className="position-absolute float-start rounded-circle bottom-0 start-0 ms-4"
-                             height="100px" src={profile.profilePicture} alt="profile picture"/>
+                             height="100px" src={`/images/${profile[0].profilePicture}`} alt="profile picture"/>
                     <div className="col col-4 mb-6"><br/></div>
                 </div>
             </div>
