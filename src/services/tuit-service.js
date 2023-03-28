@@ -10,10 +10,10 @@ export const createTuit = async (tuit) => {
 }
 
 
-export const findTuits = async () => {                      // async tags this function as asynchronous
- const response = await axios.get(TUITS_API);               // send HTTP GET request to TUITS_API
- const tuits = response.data;                               // extract JSON array from response from server
- return tuits;                                              // return tuits
+export const findTuits = async () => {
+ const response = await axios.get(TUITS_API);
+ const tuits = response.data;
+ return tuits;
 }
 
 

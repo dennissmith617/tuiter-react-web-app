@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {useDispatch, useSelector}
   from "react-redux";
 import TuitItem from "./tuit-item";
-import {findTuitsThunk}                                         // import the thunk
+import {findTuitsThunk}
   from "../../services/tuit-thunk";
 
 
