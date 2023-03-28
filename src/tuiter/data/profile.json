@@ -1,5 +1,4 @@
-[
-  {
+ {
     "firstName": "Dennis",
     "lastName": "Smith",
     "handle": "@dsmith",
@@ -13,4 +12,3 @@
     "followingCount": 340,
     "followersCount": 223
   }
-]

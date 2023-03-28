@@ -5,12 +5,12 @@ import {editProfile} from "../reducers/profile-reducer";
 
 const EditProfileComponent = () => {
     const profile = useSelector( state => state.profile );
-    const [firstName, setFirstName] = useState({firstName: profile[0].firstName});
-    const [lastName, setLastName] = useState({lastName: profile[0].lastName});
-    const [bio, setBio] = useState({bio: profile[0].bio});
-    const [location, setLocation] = useState({location: profile[0].location});
-    const [website, setWebsite] = useState({website: profile[0].website});
-    const [dateOfBirth, setDateOfBirth] = useState({dateOfBirth: profile[0].dateOfBirth});
+    const [firstName, setFirstName] = useState({firstName: profile.firstName});
+    const [lastName, setLastName] = useState({lastName: profile.lastName});
+    const [bio, setBio] = useState({bio: profile.bio});
+    const [location, setLocation] = useState({location: profile.location});
+    const [website, setWebsite] = useState({website: profile.website});
+    const [dateOfBirth, setDateOfBirth] = useState({dateOfBirth: profile.dateOfBirth});
     const dispatch = useDispatch();
     let navigate = useNavigate();
 
@@ -26,22 +26,21 @@ const EditProfileComponent = () => {
         dispatch(editProfile(newProfile));
         navigate('/tuiter/profile');
     }
-    
     return (
         <>
             <div className="position-relative">
                 <div className="row  mb-2">
-                    <a className="col col-2 mt-2" href="/tuiter/profile"><i className="bi bi-x-lg fs-4 fw-bold"></i></a>
+                    <a className="col col-2 mt-2" onClick={() => navigate('/tuiter/profile')}><i className="bi bi-x-lg fs-4 fw-bold"></i></a>
                     <div className="col col-8 mt-2"><span className="fs-4 fw-bold">Edit Profile</span></div>
                     <button className="col col-2 btn btn-dark float-end fw-bold rounded-pill"
                             onClick={() => profileUpdateHandler(firstName, lastName, bio, location, website, dateOfBirth)}>
                         Save</button>
                 </div>
-                <img src={`/images/${profile[0].bannerPicture}`} width="100%" height={150}  />
+                <img src={`/images/${profile.bannerPicture}`} width="100%" height={150}  />
 
                     <div className="col col-8">
                         <img className="position-absolute float-start rounded-circle bottom-0 start-0 ms-4"
-                             height="100px" src={`/images/${profile[0].profilePicture}`} alt="profile picture"/>
+                             height="100px" src={`/images/${profile.profilePicture}`} alt="profile picture"/>
                     <div className="col col-4 mb-6"><br/></div>
                 </div>
             </div>
